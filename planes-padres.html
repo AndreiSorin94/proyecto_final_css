@@ -9,24 +9,46 @@
   <body>
     <header>
       <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="150">
-         
-          <rect width="240" height="80" rx="10" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="2"/>
-          
-         
-          <text x="30" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#3498db">Planes</text>
-          
-       
-          <text x="118" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#e74c3c">Amigos</text>
-          
-  
-          <circle cx="110" cy="20" r="8" fill="#3498db"/>
-          <circle cx="130" cy="20" r="8" fill="#e74c3c"/>
-          <circle cx="150" cy="20" r="8" fill="#2ecc71"/>
-        </svg>
-      </div>
-      <p class="tagline">¡Tu felicidad nuestra prioridad!</p>
-    </div>
+        <a href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 240 80"
+            width="150"
+          >
+            <rect
+              width="240"
+              height="80"
+              rx="10"
+              fill="#f8f8f8"
+              stroke="#e0e0e0"
+              stroke-width="2"
+            />
+            <text
+              x="30"
+              y="50"
+              font-family="Arial, sans-serif"
+              font-size="28"
+              font-weight="bold"
+              fill="#3498db"
+            >
+              Planes
+            </text>
+            <text
+              x="118"
+              y="50"
+              font-family="Arial, sans-serif"
+              font-size="28"
+              font-weight="bold"
+              fill="#e74c3c"
+            >
+              Amigos
+            </text>
+            <circle cx="110" cy="20" r="8" fill="#3498db" />
+            <circle cx="130" cy="20" r="8" fill="#e74c3c" />
+            <circle cx="150" cy="20" r="8" fill="#2ecc71" />
+          </svg>
+        </a>
+        <p class="tagline">¡Tu felicidad nuestra prioridad!</p>
       </div>
       <nav>
         <div class="hamburger">
@@ -37,7 +59,9 @@
         <ul class="nav-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="./planes-parejas.html">Planes Pareja</a></li>
-          <li><a href="planes-padres.html" class="active">Planes Familia</a></li>
+          <li>
+            <a href="planes-padres.html" class="active">Planes Familia</a>
+          </li>
           <li><a href="planes-amigos.html">Planes Amigos</a></li>
           <li><a href="planes-trabajo.html">Planes Compañeros Trabajo</a></li>
         </ul>
@@ -55,10 +79,12 @@
 
       <section class="planes-detalle">
         <div class="plan-item">
-          <img
-            src="./assets/aventura familia.jpeg"
-            alt="Día de aventura en familia"
-          />
+          <div class="plan-image">
+            <img
+              src="./assets/aventura familia.jpeg"
+              alt="Día de aventura en familia"
+            />
+          </div>
           <div class="plan-info">
             <h3>Día de Aventura en Familia</h3>
             <p>
@@ -71,10 +97,12 @@
         </div>
 
         <div class="plan-item">
-          <img
-            src="./assets/ciencia.jpeg"
-            alt="Taller de ciencia divertida"
-          />
+          <div class="plan-image">
+            <img
+              src="./assets/ciencia.jpeg"
+              alt="Taller de ciencia divertida"
+            />
+          </div>
           <div class="plan-info">
             <h3>Taller de Ciencia Divertida</h3>
             <p>
@@ -87,7 +115,12 @@
         </div>
 
         <div class="plan-item">
-          <img src="./assets/excursion.jpeg" alt="Excursión con naturalista" />
+          <div class="plan-image">
+            <img
+              src="./assets/excursion.jpeg"
+              alt="Excursión con naturalista"
+            />
+          </div>
           <div class="plan-info">
             <h3>Excursión con Naturalista</h3>
             <p>
@@ -100,7 +133,9 @@
         </div>
 
         <div class="plan-item">
-          <img src="./assets/niñoscocina.webp" alt="Cocina en familia" />
+          <div class="plan-image">
+            <img src="./assets/niñoscocina.webp" alt="Cocina en familia" />
+          </div>
           <div class="plan-info">
             <h3>Cocina en Familia</h3>
             <p>
