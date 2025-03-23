@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanesAmigos - Inicio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 240 80"
+            width="150"
+          >
+            <rect
+              width="240"
+              height="80"
+              rx="10"
+              fill="#f8f8f8"
+              stroke="#e0e0e0"
+              stroke-width="2"
+            />
+            <text
+              x="30"
+              y="50"
+              font-family="Arial, sans-serif"
+              font-size="28"
+              font-weight="bold"
+              fill="#3498db"
+            >
+              Planes
+            </text>
+            <text
+              x="118"
+              y="50"
+              font-family="Arial, sans-serif"
+              font-size="28"
+              font-weight="bold"
+              fill="#e74c3c"
+            >
+              Amigos
+            </text>
+            <circle cx="110" cy="20" r="8" fill="#3498db" />
+            <circle cx="130" cy="20" r="8" fill="#e74c3c" />
+            <circle cx="150" cy="20" r="8" fill="#2ecc71" />
+          </svg>
+        </a>
+        <p class="tagline">¡Tu felicidad nuestra prioridad!</p>
+      </div>
+      <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="./planes-parejas.html">Planes Pareja</a></li>
+          <li><a href="./planes-padres.html">Planes Familia</a></li>
+          <li><a href="planes-amigos.html">Planes Amigos</a></li>
+          <li><a href="planes-trabajo.html">Planes Compañeros Trabajo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Experiencias inolvidables para todos</h2>
+          <p>
+            Descubre nuestros planes diseñados para compartir momentos
+            especiales con tus seres queridos
+          </p>
+          <a href="#planes" class="btn">Ver Planes</a>
+        </div>
+      </section>
+
+      <section id="planes" class="planes-section">
+        <h2>Nuestros Planes</h2>
+        <div class="planes-container">
+          <div class="plan-card">
+            <img
+              src="./assets/free-photo-of-pareja-disfrutando-de-la-vista-del-gran-canon.jpeg"
+              alt="Planes para parejas"
+            />
+            <h3>Planes Pareja</h3>
+            <p>Experiencias románticas diseñadas para fortalecer tu relación</p>
+            <a href="./planes-parejas.html" class="btn">Ver más</a>
+          </div>
+          <div class="plan-card">
+            <img
+              src="./assets/famjilia.jpeg"
+              alt="Planes para padres e hijos"
+            />
+            <h3>Planes Familia</h3>
+            <p>Actividades divertidas para disfrutar con tus hijos</p>
+            <a href="planes-padres.html" class="btn">Ver más</a>
+          </div>
+          <div class="plan-card">
+            <img src="./assets/amigos.webp" alt="Planes para amigos" />
+            <h3>Planes Amigos</h3>
+            <p>Aventuras emocionantes para vivir con tu grupo de amigos</p>
+            <a href="planes-amigos.html" class="btn">Ver más</a>
+          </div>
+          <div class="plan-card">
+            <img
+              src="./assets/team.jpeg"
+              alt="Planes para compañeros de trabajo"
+            />
+            <h3>Planes Compañeros</h3>
+            <p>Actividades de team building para mejorar el ambiente laboral</p>
+            <a href="planes-trabajo.html" class="btn">Ver más</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios-container">
+          <div class="testimonio">
+            <p>
+              "Una experiencia increíble con mi pareja. ¡Volveremos a repetir!"
+            </p>
+            <span>- María y Carlos</span>
+          </div>
+          <div class="testimonio">
+            <p>
+              "Mis hijos lo pasaron genial con las actividades. Muy
+              recomendable."
+            </p>
+            <span>- Familia Rodríguez</span>
+          </div>
+          <div class="testimonio">
+            <p>
+              "La mejor forma de reconectar con mis amigos de toda la vida."
+            </p>
+            <span>- Grupo Los Inseparables</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>PlanesAmigos</h3>
+          <p>Creando experiencias inolvidables desde 2015</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contáctanos</h3>
+          <p>Email: info@planesamigos.com</p>
+          <p>Teléfono: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="#" class="social">Facebook</a>
+            <a href="#" class="social">Instagram</a>
+            <a href="#" class="social">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 PlanesAmigos. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector('.hamburger')
+        .addEventListener('click', function () {
+          this.classList.toggle('active')
+          document.querySelector('.nav-links').classList.toggle('open')
+        })
+    </script>
+  </body>
+</html>
